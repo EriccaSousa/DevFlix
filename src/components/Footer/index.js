@@ -13,7 +13,7 @@ function Footer() {
         Orgulhosamente criado durante a
         {' '}
         <a href="https://www.alura.com.br/">
-          Imersão React da Alura, por mim Érica Sousa.
+          Imersão React da Alura, por Érica Sousa.
         </a>
       </p>
     </FooterBase>
