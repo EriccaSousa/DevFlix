@@ -4,7 +4,7 @@
 }
 
 :root {
-  --primary: #2A7AE4;
+  --primary: rgb(113, 89, 193);
   --black: #000000;
   --blackLighter: #9E9E9E;
   --grayLight: #F5F5F5;
@@ -16,11 +16,17 @@
 
 html,
 body {
-  background-image: url('./assets/img/fundo.png');
   margin: 0;
   padding: 0;
 }
 
 a {
   color: inherit;
-} 
+}
+
+#root {
+  min-height: 100vh;
+  background: orange;
+  display: flex;
+  flex-direction: column;
+}
