@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import PageDefault from '../../../PagesDefault';
 import FormField from '../../../FormField';
@@ -26,6 +26,17 @@ function CadastroCategoria() {
       infosDoEvento.target.value
     );
   }
+
+  useEffect(() => {
+    const URL_D = 'http://localhost:8080/categorias';
+    fetch(URL_D)
+      .then(async(respostaServidor) => {
+        const resposta = await respostaServidor.json();
+        setCategorias([
+          ...resposta,
+        ]);
+      });
+  });
 
   return (
     <PageDefault>
